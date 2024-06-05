@@ -3,7 +3,11 @@ package com.epam.loops;
 public class Power {
 
     public void printPower(int numberToPrint, int power) {
-
+        int temp = 1;
+        for (int i = 0; i < power; i++) {
+            temp *= numberToPrint;
+        }
+        System.out.println(temp);
     }
 
     public static void main(String[] args) {
